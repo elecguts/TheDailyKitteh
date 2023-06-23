@@ -4,7 +4,36 @@
 html {
   height: 100%;
 }
+heading {
+  grid-area: header;
+}
+main {
+  grid-area: main;
+}
+aside {
+  grid-area: sidebar;
+}
+footer {
+  grid-area: footer;
+}
+body {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: auto;
+  grid-template-areas:
+    'header header header header'
+    'sidebar main main main'
+    'footer footer footer footer';
+}
 body {
   margin: 0;
   min-height: 100%;
+}
+h1 {
+  display: flex;
+  justify-content: center;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
 }
