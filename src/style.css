@@ -4,19 +4,27 @@
 html {
   height: 100%;
 }
-heading {
+header {
   grid-area: header;
 }
 main {
   grid-area: main;
+  padding-right: 50px;
 }
 aside {
+  border: solid;
   grid-area: sidebar;
+  width: fit-content;
+  height: fit-content;
 }
 footer {
   grid-area: footer;
+  background-color: rgb(208, 208, 208);
 }
 body {
+  background-color: rgb(226, 244, 243);
+  margin: 0;
+  min-height: 100%;
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
   grid-template-rows: auto;
@@ -25,10 +33,6 @@ body {
     'sidebar main main main'
     'footer footer footer footer';
 }
-body {
-  margin: 0;
-  min-height: 100%;
-}
 h1 {
   display: flex;
   justify-content: center;
@@ -36,4 +40,18 @@ h1 {
 nav ul {
   display: flex;
   justify-content: center;
+  list-style: none;
+}
+header nav {
+  background-color: rgb(72, 198, 217);
+  color: white;
+}
+li {
+  padding-right: 20px;
+}
+header a:visited {
+  color: white;
+}
+img {
+  padding: 5px;
 }
