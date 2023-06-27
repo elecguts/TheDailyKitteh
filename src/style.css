@@ -13,9 +13,12 @@ main {
 }
 aside {
   border: solid;
+  border-width: 1px;
+  border-color: blue;
   grid-area: sidebar;
   width: fit-content;
   height: fit-content;
+  margin-left: 20px;
 }
 footer {
   grid-area: footer;
@@ -36,11 +39,15 @@ body {
 h1 {
   display: flex;
   justify-content: center;
+  font-family: 'Bacasime Antique', serif;
+  font-size: 4rem;
 }
 nav ul {
   display: flex;
   justify-content: center;
   list-style: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 header nav {
   background-color: rgb(72, 198, 217);
@@ -54,4 +61,12 @@ header a:visited {
 }
 img {
   padding: 5px;
+}
+h3 {
+  padding-left: 5px;
+}
+h1,
+h2,
+h3 {
+  color: dimgray;
 }
